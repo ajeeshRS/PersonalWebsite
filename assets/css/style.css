@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&family=Poppins:wght@300;400;600;700;900&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* body {
+  background-color: #3aafa9;
+} */
+/* navbar starts */
+.container {
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  height: 10vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 1px 4px #dadada;
+}
+li {
+  list-style: none;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+}
+a {
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #3aafa9;
+  font-family: "montserrat", sans-serif;
+  transition: 0.2s ease-in;
+}
+
+.items_1 a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+a:hover {
+  color: #1f1f29;
+}
+i {
+  transition: transform 0.1s ease-in;
+}
+i:hover {
+  transform: scale(1.1);
+}
+
+/* navbar ends */
+
+/* homepage */
+
+.home_section {
+  display: flex;
+  flex-direction: row;
+}
+.left_section {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home_img img {
+  height: 250px;
+  width: 250px;
+  border-radius: 100px;
+}
+/* home-right*/
+.right_section {
+  /* position: relative; */
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+}
+.container_box {
+  width: 500px;
+  height: 300px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.hero {
+  color: #1f1f29;
+  font-family: "montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+}
+.about_me {
+  font-family: "montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+button {
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #3aafa9;
+  border: none;
+  transition: 0.3s ease-in;
+}
+button a {
+  text-decoration: none;
+  color: #fefefe;
+  font-family: "montserrat", sans-serif;
+}
+button:hover {
+  background-color: #2d908b;
+  /* left: 3px;
+  transform: scale(1.1); */
+}
+
+button:hover a {
+  color: #ffffff;
+}
+/* home page ends */
+
+/* skill section */
+.skill_container {
+  width: 100%;
+  height: 100vh;
+}
+.skill_title {
+  width: 100%;
+  height: 30vh;
+  color: #1f1f29;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+}
+.cards {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.card {
+  box-sizing: border-box;
+  margin: 13px;
+  padding: 15px;
+  width: 180px;
+  height: 200px;
+  margin-bottom: 100px;
+  background-color: #fefefe;
+  color: #1f1f29;
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px rgb(220, 220, 220);
+  font-family: "montserrat", sans-serif;
+  font-weight: 400;
+  transition: transform 0.3s ease-in-out;
+}
+.card h3 {
+  text-align: center;
+  color: #3aafa9;
+  transition: transform 0.3s ease-in-out;
+}
+.card p {
+  /* text-align: center; */
+  font-size: 13px;
+  padding-top: 10px;
+}
+.card:hover h3 {
+  transform: scale(1.2);
+}
+.card:hover {
+  transform: scale(1.1);
+}
+/* skill section ends */
+/* hobbie section */
+.hobbie_container {
+  width: 100%;
+  height: 100vh;
+}
+.hobbie_title {
+  width: 100%;
+  height: 30vh;
+  color: #1f1f29;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+}
+.hobbie_cards {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.hobbie_card {
+  box-sizing: border-box;
+  margin: 13px;
+  padding: 15px;
+  margin-bottom: 100px;
+  width: 180px;
+  height: 200px;
+  background-color: #fefefe;
+  color: #1f1f29;
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px rgb(220, 220, 220);
+  font-family: "montserrat", sans-serif;
+  font-weight: 400;
+  transition: transform 0.3s ease-in-out;
+}
+.hobbie_card h3 {
+  text-align: center;
+  color: #3aafa9;
+  transition: transform 0.3s ease-in-out;
+}
+.hobbie_card p {
+  font-size: 13px;
+  padding-top: 10px;
+}
+.hobbie_card:hover h3 {
+  transform: scale(1.2);
+}
+.hobbie_card:hover {
+  transform: scale(1.1);
+}
+/* hobbie section */
+
+/* footer */
+
+.foot {
+  width: 100%;
+  height: 10vh;
+  background-color: #3aafa9;
+  color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+}
+.back-top {
+  position: fixed;
+  bottom: 50px;
+  right: 10px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  color: #1f1f29;
+  opacity: 70%;
+}
+
+/* media query */
+/* Smartphones*/
+@media screen and (max-width: 767px) {
+  .home_img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 60px;
+  }
+  .container_box {
+    height: 350px;
+  }
+  .skill_container {
+    height: 170vh;
+  }
+
+  .cards {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .card {
+    margin-bottom: 30px;
+  }
+  .hobbie_container {
+    height: 240vh;
+  }
+
+  .hobbie_cards {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .hobbie_card {
+    margin-bottom: 30px;
+  }
+}
+/* Tablets */
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .hero {
+    margin-top: 30px;
+  }
+  button {
+    margin-bottom: 50px;
+  }
+}
+/* Desktop */
+@media screen and (min-width: 1024px) {
+  .hero {
+    margin-top: 30px;
+  }
+  button {
+    margin-bottom: 50px;
+  }
+}
