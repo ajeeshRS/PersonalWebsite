@@ -28,7 +28,9 @@ li {
 }
 ul {
   display: flex;
+  height: 100%;
   flex-direction: row;
+  align-items: center;
 }
 a {
   padding-left: 10px;
@@ -39,9 +41,11 @@ a {
 }
 .items {
   padding-left: 40px;
+
 }
 .social_links {
   padding-right: 40px;
+ padding-top: 10px;
 }
 
 .items_1 a {
@@ -306,16 +310,52 @@ button:hover a {
 /* media query */
 /* Smartphones*/
 @media screen and (max-width: 767px) {
-  .home_img img {
-    width: 150px;
-    height: 150px;
-    border-radius: 60px;
+ 
+  .home_section {
+    display: flex;
+    flex-direction: column;
   }
+  .left_section {
+    margin-top: 50px;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .home_img img {
+    height: 200px;
+    width: 200px;
+    border-radius: 80px;
+  }
+  /* home-right*/
+  .right_section {
+    /* position: relative; */
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    padding-left: 25px;
+    padding-right: 25px;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  .hero {
+    font-size: 35px;
+  }
+ 
+
   .container_box {
     height: 350px;
   }
   .skill_container {
     height: 145vh;
+  }
+  .items {
+    padding-left: 0px;
+  }
+  .social_links {
+    padding-right: 5px;
   }
 
   .cards {
